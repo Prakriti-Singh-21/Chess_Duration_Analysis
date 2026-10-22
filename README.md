@@ -51,7 +51,7 @@ Does memorizing and playing deeper opening theory (`opening_ply`) prolong actual
 | `opening_ply` | Numerical (Integer) | Number of initial moves following strict "book" theory. | Primary Predictor |
 | `white_rating` | Numerical (Integer) | Elo rating score of the White player. | Raw Feature |
 | `black_rating` | Numerical (Integer) | Elo rating score of the Black player. | Raw Feature |
-| `avg_rating` | Numerical (Float) | Mean rating of both players: $(\text{white\_rating} + \text{black\_rating}) / 2$. | Derived Feature |
+| `avg_rating` | Numerical (Float) | (`white_rating` + `black_rating`) / 2 | Derived Feature |
 | `skill_tier` | Categorical | Binned rating class: **Beginner** ($<1400$), **Intermediate** ($1400-1800$), **Advanced** ($1800+$). | Engineered Category |
 | `opening_family` | Categorical | Standardized top-level opening system (*Ruy Lopez*, *Sicilian Defense*, etc.). | Grouped / Standardized |
 | `victory_status` | Categorical | Match outcome termination method (`Mate`, `Resign`, `Out of Time`, `Draw`). | Raw Feature |
