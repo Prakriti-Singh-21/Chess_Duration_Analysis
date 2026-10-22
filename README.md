@@ -10,10 +10,11 @@
 2. [Dataset Quality Assessment & Variable Specifications](#-dataset-Quality--variable-specifications)
 3. [Data Preparation & Transformation ](#-data-preparation--transformation)
 4. [Exploratory Data Analysis & Statistical Findings](#-exploratory-data-analysis--statistical-findings)
-5. [Interactive Streamlit Application](#-interactive-streamlit-application)
-6. [Repository Organization & Directory Structure](#-repository-organization--directory-structure)
-7. [Environment Setup & Reproduction Guide](#-environment-setup--reproduction-guide)
-8. [Generative AI Disclosure](#-generative-ai-disclosure)
+5. [Key Limitation](#key-limitation)
+6. [Interactive Streamlit Application](#-interactive-streamlit-application)
+7. [Repository Organization & Directory Structure](#-repository-organization--directory-structure)
+8. [Environment Setup & Reproduction Guide](#-environment-setup--reproduction-guide)
+9. [Generative AI Disclosure](#-generative-ai-disclosure)
 
 ---
 
@@ -92,6 +93,13 @@ The final file name of cleaned data set is `chess_cleaned.csv`
 * **Interpretation:** Beginner games are significantly shorter due to early blunder-induced resignations, while advanced games are systematically longer due to positional defense and endgame maneuvering. Hence, player rating level is a far stronger predictor of game duration than the opening choice itself.​
 
 ---
+## ⚠️ Key Limitations
+
+**Following are the limitations of the project:**
+
+* **Platform Bias:** The underlying dataset (`games.csv`) consists exclusively of games played on **Lichess**. Player behavior, time management, and opening preparation may differ significantly from other online platforms (e.g., Chess.com) or over-the-board (OTB) classical tournaments.
+* **Opening Classification Granularity:** Opening names are aggregated into broad opening families based on Eco Codes. Variant lines and transposition dynamics within specific sub-branches  introduces noise into performance and duration metrics.
+* **Selection Bias in Rated Games:** Non-rated or casual games features early resignations, or test openings that skews the move count distributions compared to competitive rated matches.
 
 ## 💻 Interactive Streamlit Application
 
