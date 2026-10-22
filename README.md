@@ -13,7 +13,7 @@
 5. [Interactive Streamlit Application](#-interactive-streamlit-application)
 6. [Repository Organization & Directory Structure](#-repository-organization--directory-structure)
 7. [Environment Setup & Reproduction Guide](#-environment-setup--reproduction-guide)
-8. [Generative AI Disclosure & Academic Integrity](#-generative-ai-disclosure--academic-integrity)
+8. [Generative AI Disclosure](#-generative-ai-disclosure)
 
 ---
 
@@ -100,3 +100,68 @@ The web dashboard (`app.py`) is organized in a  format that enables the user wit
 * **Sidebar Filtering Engine:** Dynamic toggles for Rated vs. Casual status, Skill Tier subsetting, and Opening Family focus.
 * **Performance Caching:** Utilizes Streamlit `@st.cache_data` decorators to store dataset transformations in memory, providing sub-second re-rendering during filter updates.
 * **Interactive Visualization Layer:** Built with Altair and Plotly Express to support interactive hover tooltips, zoom/pan functionality, and dynamic legend toggling.
+
+## 🔗 Live Application & Resources
+
+* **Live Streamlit App:** [Chess Opening & Duration Explorer](https://chessdurationanalysis-kdqt3drbtpxemauv92rmwj.streamlit.app/)*
+* **GitHub Repository:** [Prakriti-Singh-21/Chess_Duration_Analysis](https://github.com/Prakriti-Singh-21/Chess_Duration_Analysis)
+
+## 📂 Repository Organization & Directory Structure
+
+```text
+Chess_Duration_Analysis/
+├── Chess_Prakriti_Singh.ipynb  # Exploratory Data Analysis & statistical modeling
+├── README.md                   # Comprehensive project documentation & live links
+├── app.py                      # Production Streamlit multi-tab dashboard app
+├── chess_cleaned.csv           # Preprocessed dataset with engineered features
+├── games.csv                   # Raw Lichess source telemetry dataset
+└── requirements.txt            # Python operational dependencies & versions
+```
+
+----
+
+## 🚀 Environment Setup & Reproduction Guide
+
+
+### Prerequisites
+* Python 3.9+
+* `pip` package manager
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/Prakriti-Singh-21/Chess_Duration_Analysis.git](https://github.com/Prakriti-Singh-21/Chess_Duration_Analysis.git)
+cd Chess_Duration_Analysis
+```
+
+### 2. Configure Virtual Environment
+```bash
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+
+# Windows
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Launch the Local Application
+```bash
+streamlit run app.py
+```
+The application will open automatically at `http://localhost:8501`.
+
+---
+## 🤖 Generative AI Disclosure 
+
+**Tool / version:** Gemini 4.0 
+
+**What I asked it to help with:** I asked AI, to help me build and strucure of the README document, and construct Github repsitory
+
+**How I checked or verified the response:** I gave mutiple promt in diffrent ways 
+
+**My own contribution / interpretation:** I brainstromed to understand what it was conveying and build my understanding and made the project accordingly
